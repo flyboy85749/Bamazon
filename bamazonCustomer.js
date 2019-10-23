@@ -28,11 +28,11 @@ let displayResults = function () {
     // query the database and display all the items for the user to pick from
     connection.query("SELECT * FROM products", function (err, res) {
         console.log("Item id: | Product Name: | Department Name: | Price: | Quantity in Stock:");
-        console.log("-----------------------------------------------");
+        console.log("---------------------------------------------------------------------------");
         
         for (var i = 0; i < res.length; i++) {
-            console.log(res[i].item_id + "|" + res[i].product_name + "|" + res[i].department_name + "|" + res[i].price + "|" + res[i].stock_quantity);
-            console.log("-------------------------------------------");
+            console.log(res[i].item_id + "      |   " + res[i].product_name + " |     " + res[i].department_name + "  |   " + res[i].price + "    |     " + res[i].stock_quantity);
+            console.log("------------------------------------------------------------------------");
         }
 
         // now, we need to know what item they want
