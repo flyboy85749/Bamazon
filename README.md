@@ -10,3 +10,11 @@ The initial database values
 Displaying the items to purchase
 
 <img src="images/step1.png">
+
+Here, we see the product quantity updated, as well as a total cost calculation
+
+<img src="images/step2.png">
+
+If the user enters a quantity higher than the quantity in stock, we let them know
+
+<img src="images/toomany.png">
